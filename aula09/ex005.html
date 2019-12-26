@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+        background: rgb(red, green, blue);
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com o DOM</h1>    
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em HTML</p>
+    <div id = "msg">Clique em mim</div>
+    <script>
+    // Seleção por TAG
+        var p1 = window.document.getElementsByTagName('p')[1] // Vamos usar este método para selecionar um elemento, no caso, por meio de MARCAÇÃO, ou seja, por tags html 
+        // Quando existe mais de uma tag com o mesmo nome, pode se usar os "[]" para escolher um deles (funciona da mesma forma que um array)
+        document.write(p1.innerHTML) // "innerHTML" irá pegar todo o texto contido (no caso) na tag, incluindo outras tags que estiverem dentro (diferente do innerText), como o <strong> da tag <p>
+    // Seleção por ID
+        var d = window.document.getElementById("msg") // Usamos este método para selecionar uma tag por id, facilitando nosso trabalho
+        d.style.background = 'green' // Podemos, por exemplo, mudar o background desta tag (<div>) usando o DOM 
+    //Seleção por NOME e CLASSE --> Funcionam da mesma forma que o seletor por ID, porém deve mudar para "class" ou "name" na tag HTML
+    //Seleção por SELETOR
+        var d = window.document.querySelector('div#msg') // Com esse método você pode selecionar tags com ids ou classes diferentes
+        // '#' para ID ----- '.' para CLASS 
+    </script>
+</body>
+</html>
