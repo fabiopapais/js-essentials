@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(255, 0, 0);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--<div id = "area" onmousemove = "entrar()" onmouseout="sair()" onclick="clicar()">  Substituímos esta notação usando o javascript (com os addEventListeners( , )) -->
+    <div>
+    Interaja...
+    </div>
+
+    <script>
+        var area = window.document.getElementById("area") // "Transformamos" nossa tag em uma variável para que possamos usa-lá em nosso código
+        //Adicionando eventListeners para realizarem uma ação quando algo acontecer
+        area.addEventListener("click", clicar)
+        area.addEventListener("mouseenter", entrar)
+        area.addEventListener("mouseout", sair)
+
+        function entrar() {
+        area.innerText = 'Interagiu!'
+        }
+
+        function sair() {
+        area.innerText = "Interaja..."
+        area.style.background = "rgb(255, 0, 0)"
+        }
+
+        function clicar() {
+        area.innerText = "clicou!"
+        area.style.background = "green"
+        }
+    </script>
+</body>
+</html>
