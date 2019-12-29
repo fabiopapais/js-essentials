@@ -1,9 +1,9 @@
-var txtval = window.document.getElementById('txtval')
-let val = Number(txtval)
+var txtval = window.document.querySelector('input#txtvel')
 var res = window.document.getElementById('res')
 function verificar(){
-    if (val > 60){
-        res.innerHTML += 'Resultado: Você passou do limite de velocidade! <b>MULTADO!</br>'
+    
+    if (Number(txtval.value) > 60){
+        res.innerHTML += 'Resultado: Você passou do limite de velocidade! <b>MULTADO!</b>'
         res.style.color = 'red'
     }
     else {
@@ -11,4 +11,5 @@ function verificar(){
         res.style.color = 'green'
     }
     res.innerHTML += '<p><b>Dirija sempre com segurança e nunca esqueça do cinto!</p></b>'   
+    console.log(Number(val.value))
 }
