@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Radar</title>
+    <style>
+        *{
+            font-family: Arial;
+        }
+
+        #res{
+            margin-top: 20px;
+            margin-left: 10px;
+            font-size: 15px;
+        }
+        #box{
+            padding-bottom: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            box-shadow: 1pt 1pt 1pt black;
+            border-radius: 13px;
+            border: 5px solid ;
+            color: chocolate;
+        }
+        .tit{
+            padding-left: 100px;
+        }
+        #box2{
+            margin-left: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id = "box">
+    <h1 class = "tit">Sistema de Multas</h1>
+    <p id = "box2">Velocidade do carro: <input type = "number" id = "txtvel"> Km/h
+    <input type="button" value="Verificar" onclick="verificar()"> </p>
+    <div id = "res"></div>
+    <script type ="text/javascript" src = "scriptex010.js">
+    </script> 
+    </div>
+</body>
+</html>
