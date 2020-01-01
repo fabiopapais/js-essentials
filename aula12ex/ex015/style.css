@@ -1,0 +1,36 @@
+body {
+    background: rgb(58, 150, 236);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 65px;
+}
+section {
+    background: whitesmoke;
+    border-radius: 10px; /* Deixa as bordas arredondadas */
+    padding: 15px; /* No caso, deu "preenchimento" à seção */
+    width: 450px; /* Mudando a largura */
+    margin: auto; /* Deixa a seção (horizontalmente?) centralizada */
+    box-shadow: 5px 5px 10pt rgba(0, 0, 0, 0.438); /* Cria sombra: "X Y Difusão Cor" */
+    height: 310px;
+}
+footer {
+    color: whitesmoke;
+    text-align: center;
+    font-style: italic;
+}
+#foto {
+    margin-left: 105px;
+    margin-top: 5px;
+}
+#msg {
+    text-align: center;
+    padding: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+
