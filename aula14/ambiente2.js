@@ -6,7 +6,7 @@ while (c <= 5){
 }
 */
 
-// Mesma coisa com for
+// Mesma coisa com for:
 
 for (var c = 1 ; c<4 ; c**2) {
     console.log(c)
