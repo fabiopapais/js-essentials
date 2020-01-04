@@ -13,7 +13,7 @@ function load() {
     }
     else if (hora > 12 && hora < 18) {
         img.src = "tarde.png"
-        document.body.style.background = "rgb(200, 128, 0)"
+        document.body.style.background = "rgb(200, 128, 0)"  
     }
     else {
         img.src = "noite.png"
