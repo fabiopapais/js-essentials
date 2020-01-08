@@ -69,5 +69,6 @@ function inputAnalysis() {
         numMenorHTML.innerHTML = `O menor número que você inseriu foi <b>${numMenor}</b>`
         numSomaHTML.innerHTML = `A soma de todos os números dá <b>${numSoma}</b>`
         numMediaHTML.innerHTML = `A média de todos os números dá <b>${numMedia}</b>`
+        document.body.style.backgroundColor = 'rgba(20, 238, 38, 0.8)'
     }
 }

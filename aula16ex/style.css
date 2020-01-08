@@ -1,6 +1,8 @@
 body {
     background: rgb(58, 150, 236);
     font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 3.5s;
+    margin-top: 130px;
 }
 
 header {
@@ -21,3 +23,48 @@ footer {
     text-align: center;
     font-style: italic;
 }
+#txtNum {
+    border: 1pt solid rgba(0, 0, 0, 0.20);
+    border-radius: 4px;
+    padding: 4px;
+    transition-duration: 0.5s;
+}
+#txtNum:hover, #txtNum:focus {
+    outline: none;
+    border-color: rgb(20, 238, 38);
+    box-shadow: 0px 0px 10px rgb(20, 238, 38);
+}
+#inputAdd {
+    border: 1pt solid rgba(0, 0, 0, 0.20);
+    border-radius: 4px;
+    padding: 4px;
+    transition-duration: 0.5s;
+}
+#inputAdd:hover {
+    outline: none;
+    border-color: rgb(20, 238, 38);
+    box-shadow: 0px 0px 10px rgb(20, 238, 38);
+}
+#addedNum {
+    border: 1pt solid rgba(0, 0, 0, 0.20);
+    border-radius: 4px;
+    padding: 4px;
+}
+#inputAnalysis {
+    border: 1pt solid rgba(0, 0, 0, 0.20);
+    border-radius: 4px;
+    padding: 7px;
+    margin-left: 70px;
+    margin-top: 27px;
+    position: absolute;
+    transition-duration: 0.5s;
+}
+#inputAnalysis:hover {
+    outline: none;
+    border-color: rgb(20, 238, 38);
+    box-shadow: 0px 0px 10px rgb(20, 238, 38);
+}
+#res {
+    text-align: center;
+}
+
