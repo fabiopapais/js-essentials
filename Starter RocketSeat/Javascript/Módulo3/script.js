@@ -3,7 +3,6 @@ var inputElement = document.querySelector("#app input")
 var buttonElement = document.querySelector("#app button")
 
 var todos = JSON.parse(localStorage.getItem('list_todos')) || []
-
 // Vamos pegar o array de todos no localStorage e convertê-lo para array novamente com o JSON.parse
 // Caso o localStorage esteja vazio, ele irá gerar um arra vazio, impedindo que dê erro
 
