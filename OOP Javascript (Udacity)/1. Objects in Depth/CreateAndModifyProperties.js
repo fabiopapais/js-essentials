@@ -48,4 +48,4 @@
     fake.name = "Natália"
 
     console.log(original.name) // NATÁLIA
-    // The two objects are literally the same, any change made in original will affect the fake
+    // The two objects are literally the same, any change made in "original" will affect the "fake"
