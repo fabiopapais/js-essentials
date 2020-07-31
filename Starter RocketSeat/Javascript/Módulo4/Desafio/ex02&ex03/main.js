@@ -4,6 +4,7 @@ document.querySelector('#main').appendChild(ul)
 function render_repos(repos) {
     ul.innerHTML = ""
     
+    document.querySelector('#main').style.padding = '75px'
     for (let repo of repos) {
         let li = document.createElement('li')
         li.innerText = repo.name
