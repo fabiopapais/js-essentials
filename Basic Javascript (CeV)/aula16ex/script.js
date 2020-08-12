@@ -26,6 +26,7 @@ function addNum() { // Esta função irá adicionar o número na lista e no arra
             var resList = document.createElement("option")
             resList.innerHTML = `O número ${Number(txtNum.value)} foi adicionado `
             addedNum.appendChild(resList)
+            
             //Array interaction
             numberArray.push(Number(txtNum.value))
             console.log(numberArray)
