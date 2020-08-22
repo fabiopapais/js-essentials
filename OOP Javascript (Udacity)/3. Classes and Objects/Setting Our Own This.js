@@ -9,7 +9,7 @@ function multiply(n1, n2) {
 console.log(multiply(2, 3)) // 6
 //  We first pass into it a single value to set as the value of this; 
 // then we pass in any of the receiving function's arguments
-console.log(multiply.call(globalThis || globalThis, 2, 3)) // the this here alters if you are in the browser or not
+console.log(multiply.call(globalThis || window, 2, 3)) // the this here alters if you are in the browser or not
 
 // An example where call() shines:
 const cat = {

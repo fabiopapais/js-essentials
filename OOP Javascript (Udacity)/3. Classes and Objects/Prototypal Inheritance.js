@@ -74,3 +74,4 @@ console.log(result) // true
 const myPrototype = Object.getPrototypeOf(ralph)
 
 console.log(myPrototype) // { favoriteFood: 'cheese', hasTail: true }
+
